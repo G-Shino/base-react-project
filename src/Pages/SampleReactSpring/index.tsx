@@ -3,11 +3,11 @@ import { useState } from "react";
 import styles, { colorScehmes } from "./style";
 import { useSprings, useSpring } from "react-spring";
 
+//react springの見本　飛ばしてOK
+
 const { WrapperDiv, GridContainer, AnimatedItem, AnimatedBox } = styles;
 
-interface FileInputProps {}
-
-export const SampleReactSpring: React.FC<FileInputProps> = ({}) => {
+export const SampleReactSpring: React.FC = ({}) => {
   const [index, setIndex] = useState<number | null>(null);
 
   const springs = useSprings(

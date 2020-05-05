@@ -30,6 +30,9 @@ export const Preview: React.FC = ({}) => {
         <li>
           <Link to="/sample-react-spring">ReactSpring</Link>
         </li>
+        <li>
+          <Link to="/sample-react-gesture">ReactGesture</Link>
+        </li>
       </ul>
       <hr />
     </WrapperDiv>
