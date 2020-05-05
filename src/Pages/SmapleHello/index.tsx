@@ -5,10 +5,10 @@ const { WrapperDiv } = styles;
 
 interface FileInputProps {}
 
-export const Sample: React.FC<FileInputProps> = ({}) => {
+export const SampleHello: React.FC<FileInputProps> = ({}) => {
   return (
     <WrapperDiv>
-      <p>Sample</p>
+      <p>Hello</p>
     </WrapperDiv>
   );
 };
