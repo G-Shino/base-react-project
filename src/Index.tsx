@@ -4,6 +4,8 @@ import { Routes } from "./Routes";
 import { HashRouter } from "react-router-dom";
 import { GlobalStyle } from "./Components/GlobalStyle";
 
+//ライブラリ等でくるむ場所　reduxを導入するならproviderが入る場所
+
 ReactDOM.render(
   <div>
     <GlobalStyle />
