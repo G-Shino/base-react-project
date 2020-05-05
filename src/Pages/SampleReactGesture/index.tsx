@@ -1,6 +1,5 @@
 import * as React from "react";
 import styles from "./style";
-import { useRef } from "react";
 import { useDrag } from "react-use-gesture";
 import { useSprings } from "react-spring";
 
@@ -31,8 +30,10 @@ export const SampleReactGesture: React.FC = ({}) => {
     boxShadow: "0 0 4px gray",
   }));
 
-  const order = useRef<number[]>(springProps.map((_, index) => index));
-  const prevOrder = useRef<number[]>(springProps.map((_, index) => index));
+  const order = React.useRef<number[]>(springProps.map((_, index) => index));
+  const prevOrder = React.useRef<number[]>(
+    springProps.map((_, index) => index)
+  );
 
   const bind = useDrag(({ args: [oriIdx], down, movement: [x, y] }) => {
     const preIdx = prevOrder.current.indexOf(oriIdx);

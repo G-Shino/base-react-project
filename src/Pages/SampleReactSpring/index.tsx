@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useState } from "react";
 import styles, { colorScehmes } from "./style";
 import { useSprings, useSpring } from "react-spring";
 
@@ -8,7 +7,7 @@ import { useSprings, useSpring } from "react-spring";
 const { WrapperDiv, GridContainer, AnimatedItem, AnimatedBox } = styles;
 
 export const SampleReactSpring: React.FC = ({}) => {
-  const [index, setIndex] = useState<number | null>(null);
+  const [index, setIndex] = React.useState<number | null>(null);
 
   const springs = useSprings(
     colorScehmes.length,

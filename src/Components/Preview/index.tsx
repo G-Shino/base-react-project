@@ -11,6 +11,7 @@ export const Preview: React.FC = ({}) => {
     <WrapperDiv>
       <h1>Base React Project</h1>
       <hr />
+      <p>Basic</p>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -27,6 +28,10 @@ export const Preview: React.FC = ({}) => {
         <li>
           <Link to="/sample-props">Props</Link>
         </li>
+      </ul>
+      <hr />
+      <p>Library</p>
+      <ul>
         <li>
           <Link to="/sample-react-spring">ReactSpring</Link>
         </li>
