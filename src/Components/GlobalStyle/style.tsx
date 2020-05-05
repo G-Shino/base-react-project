@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 import { Color } from "./../../Constants/Color";
 
-// レセットしたいものやグローバルに適用したいものはここに書く
+// resetしたいものやグローバルに適用したいものはここに書く
 // ベースのフォントを10pxにする rem指定がわかりやすくなる　だいたいのブラウザはデフォルトで16px
 // フォントサイズは基本的にrem, emで指定する
 // bodyは14px chromeのバグのためemで指定
