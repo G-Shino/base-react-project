@@ -1,6 +1,7 @@
 # base-react-project
 
 yarn install -> yarn start
+(macでfsevent系のwarningが気になるなら yarn install --ignore-optional)
 
 vs code の extensiont
 
