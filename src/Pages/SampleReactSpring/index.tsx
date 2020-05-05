@@ -33,7 +33,7 @@ export const SampleReactSpring: React.FC = ({}) => {
       name,
       background: hex,
       color: fontColor,
-      height: "200px",
+      height: "400px",
       opacity: "1",
     });
   };

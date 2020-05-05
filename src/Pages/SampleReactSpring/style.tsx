@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import { animated } from "react-spring";
 
-const WrapperDiv = styled.div``;
+const WrapperDiv = styled.div`
+  width: 100%;
+`;
 
 const GridContainer = styled.div`
+  width: 80%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 8px;

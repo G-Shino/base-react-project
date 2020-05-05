@@ -38,6 +38,9 @@ export const Preview: React.FC = ({}) => {
         <li>
           <Link to="/sample-react-gesture">ReactGesture</Link>
         </li>
+        <li>
+          <Link to="/sample-axios">Axios</Link>
+        </li>
       </ul>
       <hr />
     </WrapperDiv>

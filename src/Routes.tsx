@@ -8,10 +8,11 @@ import { SampleStyle } from "./Pages/SampleStyle";
 import { SampleProps } from "./Pages/SampleProps";
 import { SampleReactSpring } from "./Pages/SampleReactSpring";
 import { SampleReactGesture } from "./Pages/SampleReactGesture";
+import { SampleAxios } from "./Pages/SampleAxios";
 
 //ページごとのルーティング用　ここでパスとコンポーネントを結びつけている
 
-export const Routes: React.FC<any> = (props) => {
+export const Routes: React.FC = () => {
   return (
     <div>
       {/* Previewは適宜コメントアウトしてページを確認すること */}
@@ -31,6 +32,7 @@ export const Routes: React.FC<any> = (props) => {
           path="/sample-react-gesture"
           component={SampleReactGesture}
         />
+        <Route exact path="/sample-axios" component={SampleAxios} />
       </Switch>
     </div>
   );
