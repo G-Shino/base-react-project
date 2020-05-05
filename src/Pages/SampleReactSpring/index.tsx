@@ -3,9 +3,7 @@ import styles from "./style";
 
 const { WrapperDiv } = styles;
 
-interface FileInputProps {}
-
-export const SampleReactSpring: React.FC<FileInputProps> = ({}) => {
+export const SampleReactSpring: React.FC = ({}) => {
   return (
     <WrapperDiv>
       <p>Sample</p>

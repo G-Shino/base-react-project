@@ -3,9 +3,7 @@ import styles from "./style";
 
 const { WrapperDiv } = styles;
 
-interface FileInputProps {}
-
-export const SampleLayout: React.FC<FileInputProps> = ({}) => {
+export const SampleLayout: React.FC = ({}) => {
   return (
     <WrapperDiv>
       <p>Sample</p>
