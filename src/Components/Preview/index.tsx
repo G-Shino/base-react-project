@@ -28,7 +28,7 @@ export const Preview: React.FC = ({}) => {
           <Link to="/sample-props">Props</Link>
         </li>
         <li>
-          <Link to="/sample-react-spring">React Spring</Link>
+          <Link to="/sample-react-spring">ReactSpring</Link>
         </li>
       </ul>
       <hr />

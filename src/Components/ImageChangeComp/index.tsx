@@ -27,7 +27,7 @@ export const ImageChangeComp: React.FC<ImageChangeCompProps> = ({
       </StyledImageDiv>
       <StyledButtonDiv>
         <StyledButton onClick={() => setFlagClick(!flagClick)}>
-          {flagClick ? "BEFORE" : "AFTER"}
+          {flagClick ? "Afterを見る" : "Beforeを見る"}
         </StyledButton>
       </StyledButtonDiv>
     </WrapperDiv>
