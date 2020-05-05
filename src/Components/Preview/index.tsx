@@ -22,10 +22,10 @@ export const Preview: React.FC = ({}) => {
           <Link to="/sample-image">Image</Link>
         </li>
         <li>
-          <Link to="/sample-props">Props</Link>
+          <Link to="/sample-style">Style</Link>
         </li>
         <li>
-          <Link to="/sample-layout">Layout</Link>
+          <Link to="/sample-props">Props</Link>
         </li>
         <li>
           <Link to="/sample-react-spring">React Spring</Link>

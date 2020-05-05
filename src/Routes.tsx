@@ -4,9 +4,9 @@ import { Route } from "react-router-dom";
 import { Preview } from "./Components/Preview";
 import { SampleHello } from "./Pages/SmapleHello";
 import { SampleImage } from "./Pages/SampleImage";
-import { SampleReactSpring } from "./Pages/SampleReactSpring";
-import { SampleLayout } from "./Pages/SampleLayout";
+import { SampleStyle } from "./Pages/SampleStyle";
 import { SampleProps } from "./Pages/SampleProps";
+import { SampleReactSpring } from "./Pages/SampleReactSpring";
 
 //ページごとのルーティング用　ここでパスとコンポーネントを結びつけている
 
@@ -18,8 +18,8 @@ export const Routes: React.FC<any> = (props) => {
       <Switch>
         <Route exact path="/sample-hello" component={SampleHello} />
         <Route exact path="/sample-image" component={SampleImage} />
+        <Route exact path="/sample-style" component={SampleStyle} />
         <Route exact path="/sample-props" component={SampleProps} />
-        <Route exact path="/sample-layout" component={SampleLayout} />
         <Route
           exact
           path="/sample-react-spring"
