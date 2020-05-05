@@ -28,6 +28,9 @@ export const Preview: React.FC = ({}) => {
         <li>
           <Link to="/sample-props">Props</Link>
         </li>
+        <li>
+          <Link to="/sample-responsive">Responsive</Link>
+        </li>
       </ul>
       <hr />
       <p>Library</p>

@@ -9,6 +9,7 @@ import { SampleProps } from "./Pages/SampleProps";
 import { SampleReactSpring } from "./Pages/SampleReactSpring";
 import { SampleReactGesture } from "./Pages/SampleReactGesture";
 import { SampleAxios } from "./Pages/SampleAxios";
+import { SampleResposive } from "./Pages/SampleResponsive";
 
 //ページごとのルーティング用　ここでパスとコンポーネントを結びつけている
 
@@ -22,6 +23,7 @@ export const Routes: React.FC = () => {
         <Route exact path="/sample-image" component={SampleImage} />
         <Route exact path="/sample-style" component={SampleStyle} />
         <Route exact path="/sample-props" component={SampleProps} />
+        <Route exact path="/sample-responsive" component={SampleResposive} />
         <Route
           exact
           path="/sample-react-spring"

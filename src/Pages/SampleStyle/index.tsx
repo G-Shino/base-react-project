@@ -31,7 +31,7 @@ export const SampleStyle: React.FC = ({}) => {
         }
         step="1"
       />
-      <p>hoverで赤くなる</p>
+      <p>hoverで変化する</p>
       <TransformDiv width={divWidth} height={divHeight}></TransformDiv>
     </WrapperDiv>
   );

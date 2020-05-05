@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Color } from "./../../Constants/Color";
 
 const WrapperDiv = styled.div`
   width: 300px;
@@ -21,9 +22,9 @@ interface TransformDivProps {
 const TransformDiv = styled.div`
   width: ${(props: TransformDivProps) => props.width}px;
   height: ${(props: TransformDivProps) => props.height}px;
-  background-color: blue;
+  background-color: ${Color.MAIN_COLOR};
   &:hover {
-    background-color: red;
+    background-color: ${Color.ACCENT_COLOR_1};
   }
 `;
 

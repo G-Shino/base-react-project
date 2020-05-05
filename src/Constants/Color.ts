@@ -7,4 +7,5 @@ export enum Color {
   ACCENT_COLOR_1 = "#F5F5DC",
   ACCENT_COLOR_2 = "#E3D7A3",
   FONT_COLOR = "black",
+  FONT_SUB_COLOR = "white",
 }
