@@ -1,12 +1,6 @@
 import * as React from "react";
 import styles from "./style";
 
-const { WrapperDiv } = styles;
+const { StyledGlobal } = styles;
 
-export const GlobalStyle: React.FC = ({}) => {
-  return (
-    <WrapperDiv>
-      <p>Hello</p>
-    </WrapperDiv>
-  );
-};
+export const GlobalStyle: React.FC = () => <StyledGlobal />;

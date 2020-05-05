@@ -11,7 +11,7 @@ export const Routes: React.FC<any> = (props) => {
   return (
     <div>
       <h1>Base React Project</h1>
-      <h2>Basic</h2>
+      <hr />
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -32,6 +32,7 @@ export const Routes: React.FC<any> = (props) => {
           <Link to="/sample-react-spring">React Spring</Link>
         </li>
       </ul>
+      <hr />
       <Switch>
         <Route exact path="/sample-hello" component={SampleHello} />
         <Route exact path="/sample-image" component={SampleImage} />

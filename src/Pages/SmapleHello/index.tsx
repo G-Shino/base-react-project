@@ -1,12 +1,14 @@
 import * as React from "react";
 import styles from "./style";
 
-const { WrapperDiv } = styles;
+//一番シンプルな書き方
+
+const { WrapperDiv, StyledP } = styles;
 
 export const SampleHello: React.FC = ({}) => {
   return (
     <WrapperDiv>
-      <p>Hello</p>
+      <StyledP>Hello</StyledP>
     </WrapperDiv>
   );
 };
