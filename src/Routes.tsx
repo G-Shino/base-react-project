@@ -6,6 +6,7 @@ import { SampleHello } from "./Pages/SmapleHello";
 import { SampleImage } from "./Pages/SampleImage";
 import { SampleStyle } from "./Pages/SampleStyle";
 import { SampleProps } from "./Pages/SampleProps";
+import { Dummy } from "./Pages/Dummy";
 import { SampleReactSpring } from "./Pages/SampleReactSpring";
 import { SampleReactGesture } from "./Pages/SampleReactGesture";
 import { SampleAxios } from "./Pages/SampleAxios";
@@ -24,6 +25,7 @@ export const Routes: React.FC = () => {
         <Route exact path="/sample-style" component={SampleStyle} />
         <Route exact path="/sample-props" component={SampleProps} />
         <Route exact path="/sample-responsive" component={SampleResposive} />
+        <Route exact path="/dummy" component={Dummy} />
         <Route
           exact
           path="/sample-react-spring"
