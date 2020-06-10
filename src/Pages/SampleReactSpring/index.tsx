@@ -4,9 +4,48 @@ import { useSprings, useSpring } from "react-spring";
 
 //react springの見本　飛ばしてOK
 
+console.log("outer")
+
+
+
 const { WrapperDiv, GridContainer, AnimatedItem, AnimatedBox } = styles;
 
+interface props {
+  test: () => number
+}
+
+
+const Test = React.memo<props>(({test}) => {
+  console.log("memo");
+  return (
+    <div>{test()}</div>
+    )
+  })
+  
+  // const b_test = () => {
+  //   console.log("b"); 
+  //   return 10;
+  // }
 export const SampleReactSpring: React.FC = ({}) => {
+  // const b_test = React.useCallback(() => {
+  //   console.log("b"); 
+  //   return 10;
+  // }, [])
+  const b_test = () => {
+    console.log("b"); 
+    return 10;
+  }
+  console.log("inner")
+  React.useLayoutEffect(() => {
+    console.log("useEffectLayout")
+  }, [])
+  React.useEffect(() => {
+    console.log("useEffect []")
+  }, [])
+  React.useEffect(() => {
+    console.log("useEffect")
+  })
+  console.log("inner2")
   const [index, setIndex] = React.useState<number | null>(null);
 
   const springs = useSprings(
@@ -40,6 +79,7 @@ export const SampleReactSpring: React.FC = ({}) => {
 
   return (
     <WrapperDiv>
+      <Test test={b_test}/>
       <AnimatedItem style={springProps}>
         <AnimatedBox>{springProps.name}</AnimatedBox>
         <AnimatedBox>
